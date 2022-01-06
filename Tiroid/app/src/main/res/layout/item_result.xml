@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/cardView"
+    app:cardCornerRadius="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_tst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TST Değeri:"
+                android:fontFamily="@font/nunitolight"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_tsh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TSH Değeri:"
+                android:fontFamily="@font/nunitolight"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T3 Değeri:"
+                android:fontFamily="@font/nunitolight"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_madtsh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MADTSH Değeri:"
+                android:fontFamily="@font/nunitolight"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Normal"
+            android:gravity="center"
+            android:fontFamily="@font/nunitosemibold"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

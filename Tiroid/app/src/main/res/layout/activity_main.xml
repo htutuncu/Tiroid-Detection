@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="55sp"
+        android:textColor="@color/black"
+        android:text="Hoşgeldiniz !"
+        android:fontFamily="@font/nunitosemibolditalic"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/ll_sign_in_edittexts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/title_main"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_mail_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:hintAnimationEnabled="true"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            app:counterMaxLength="20"
+            android:hint="E-mail"
+            app:helperText="ornek@example.com"
+            android:layout_marginHorizontal="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_password_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:hintAnimationEnabled="true"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            app:counterMaxLength="15"
+            android:hint="Parola"
+            app:passwordToggleEnabled="true"
+            android:layout_marginHorizontal="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_sign_up_edittexts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/title_main"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="true"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            app:counterMaxLength="30"
+            android:hint="Ad Soyad"
+            app:helperText="Örnek: Deniz Kaya"
+            android:layout_marginHorizontal="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:hintAnimationEnabled="true"
+            app:errorEnabled="true"
+            android:hint="Yaş"
+            android:layout_marginHorizontal="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:hintAnimationEnabled="true"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            app:counterMaxLength="20"
+            android:hint="E-mail"
+            app:helperText="ornek@example.com"
+            android:layout_marginHorizontal="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:hintAnimationEnabled="true"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            app:counterMaxLength="15"
+            android:hint="Parola"
+            app:passwordToggleEnabled="true"
+            android:layout_marginHorizontal="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sign_in"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/ll_sign_up"
+        android:layout_marginHorizontal="40dp"
+        android:layout_height="50dp"
+        android:onClick="signIn"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_rounded_bg_blue"
+        android:layout_marginTop="350dp"
+        android:elevation="8dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giriş Yap"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:fontFamily="@font/nunitolightitalic"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sign_up"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        android:layout_height="50dp"
+        android:onClick="signUp"
+        android:background="@drawable/btn_rounded_bg_blue"
+        android:layout_marginTop="30dp"
+        android:elevation="8dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Ol"
+            android:fontFamily="@font/nunitolightitalic"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
